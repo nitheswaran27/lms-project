@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useCourses } from "@/contexts/CoursesContext";
 import Navbar from "@/components/Navbar";
 import CourseCard from "@/components/CourseCard";

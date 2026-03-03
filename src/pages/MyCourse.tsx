@@ -1,9 +1,8 @@
-import React from "react";
 import { useCourses } from "@/contexts/CoursesContext";
 import { useEnrollment } from "@/contexts/EnrollmentContext";
 import Navbar from "@/components/Navbar";
 import CourseCard from "@/components/CourseCard";
-import { BookOpen, Award } from "lucide-react";
+import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 

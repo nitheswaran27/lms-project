@@ -1,22 +1,6 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import axios from "axios";
-
-interface Course {
-  id: string;
-  title: string;
-  description: string;
-  longDescription: string;
-  videoUrl: string;
-  videoDuration: number;
-  thumbnail: string;
-  category: string;
-  questions: {
-    id: string;
-    question: string;
-    options: string[];
-    correctIndex: number;
-  }[];
-}
+import { type Course } from "@/data/courses";
 
 interface CoursesContextType {
   courses: Course[];

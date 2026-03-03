@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCourses } from "@/contexts/CoursesContext";
 import { useEnrollment } from "@/contexts/EnrollmentContext";
 import { useAuth } from "@/contexts/AuthContext";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import { Award, Download, Share2, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { Award, Download, Share2, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";

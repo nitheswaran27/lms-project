@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Question } from "@/data/courses";
+import { useState } from "react";
+import { type Question } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, XCircle, ChevronRight, RotateCcw, Award } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface QuizProps {
   questions: Question[];
@@ -84,7 +83,7 @@ const Quiz = ({ questions, onComplete }: QuizProps) => {
       </CardHeader>
       <CardContent className="p-6 space-y-4">
         <div className="grid gap-3">
-          {currentQuestion.options.map((option, index) => (
+          {currentQuestion.options.map((option: string, index: number) => (
             <button
               key={index}
               onClick={() => handleOptionSelect(index)}
