@@ -35,7 +35,7 @@ export const CoursesProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/courses");
+        const response = await axios.get("/api/courses");
         setCourses(response.data);
       } catch (err) {
         setError("Failed to fetch courses.");
